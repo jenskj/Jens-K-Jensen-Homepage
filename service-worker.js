@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Jens-K-Jensen-Homepage/precache-manifest.4be98863e8d1799b2a983d21a46ee1c9.js"
+  "/PublishedHomepage/precache-manifest.d10e38569ab1debf8b25590da1a22e6a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Jens-K-Jensen-Homepage/index.html", {
+workbox.routing.registerNavigationRoute("/PublishedHomepage/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

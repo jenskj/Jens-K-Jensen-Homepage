@@ -1,14 +1,14 @@
 {
-  "main.css": "/Jens-K-Jensen-Homepage/static/css/main.76d0970c.chunk.css",
-  "main.js": "/Jens-K-Jensen-Homepage/static/js/main.f25a77fe.chunk.js",
-  "main.js.map": "/Jens-K-Jensen-Homepage/static/js/main.f25a77fe.chunk.js.map",
-  "static/js/1.e15e1c82.chunk.js": "/Jens-K-Jensen-Homepage/static/js/1.e15e1c82.chunk.js",
-  "static/js/1.e15e1c82.chunk.js.map": "/Jens-K-Jensen-Homepage/static/js/1.e15e1c82.chunk.js.map",
-  "runtime~main.js": "/Jens-K-Jensen-Homepage/static/js/runtime~main.a71aa1a7.js",
-  "runtime~main.js.map": "/Jens-K-Jensen-Homepage/static/js/runtime~main.a71aa1a7.js.map",
-  "static/css/main.76d0970c.chunk.css.map": "/Jens-K-Jensen-Homepage/static/css/main.76d0970c.chunk.css.map",
-  "static/media/projects.css": "/Jens-K-Jensen-Homepage/static/media/OCEAN.53488488.png",
-  "index.html": "/Jens-K-Jensen-Homepage/index.html",
-  "precache-manifest.4be98863e8d1799b2a983d21a46ee1c9.js": "/Jens-K-Jensen-Homepage/precache-manifest.4be98863e8d1799b2a983d21a46ee1c9.js",
-  "service-worker.js": "/Jens-K-Jensen-Homepage/service-worker.js"
+  "main.css": "/PublishedHomepage/static/css/main.3e8b6321.chunk.css",
+  "main.js": "/PublishedHomepage/static/js/main.bc667631.chunk.js",
+  "main.js.map": "/PublishedHomepage/static/js/main.bc667631.chunk.js.map",
+  "static/js/1.e15e1c82.chunk.js": "/PublishedHomepage/static/js/1.e15e1c82.chunk.js",
+  "static/js/1.e15e1c82.chunk.js.map": "/PublishedHomepage/static/js/1.e15e1c82.chunk.js.map",
+  "runtime~main.js": "/PublishedHomepage/static/js/runtime~main.4c1d7df8.js",
+  "runtime~main.js.map": "/PublishedHomepage/static/js/runtime~main.4c1d7df8.js.map",
+  "static/css/main.3e8b6321.chunk.css.map": "/PublishedHomepage/static/css/main.3e8b6321.chunk.css.map",
+  "static/media/projects.css": "/PublishedHomepage/static/media/OCEAN.53488488.png",
+  "index.html": "/PublishedHomepage/index.html",
+  "precache-manifest.d10e38569ab1debf8b25590da1a22e6a.js": "/PublishedHomepage/precache-manifest.d10e38569ab1debf8b25590da1a22e6a.js",
+  "service-worker.js": "/PublishedHomepage/service-worker.js"
 }
