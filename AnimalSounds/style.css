@@ -1,0 +1,149 @@
+html {
+  font-size: 10px;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#content {
+  position: absolute;
+  height:100%;
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#imgWrap {
+  position: absolute;
+  top: 10px;
+  height: 400px;
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  
+}
+
+#imgDiv {
+  z-index: 3;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.fadeIn {
+  animation: fadeIn forwards 0.2s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+.fadeOut {
+  animation: fadeOut forwards 0.2s ease-out;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+.keys {
+  display: flex;
+  z-index: 10;
+  flex: 1;
+  bottom: 40px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 6px solid black;
+  border-radius: 7px;
+  margin: 2px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: all .07s ease;
+  height: 70px;
+  width: 65px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 6px black;
+}
+
+.key:nth-child(1){
+  background: navy;
+}
+
+.key:nth-child(2){
+  background: olive;
+}
+
+.key:nth-child(3){
+  background: #e6194B;
+}
+
+.key:nth-child(4){
+  background: #e6beff;
+}
+
+.key:nth-child(5){
+  background: black;
+}
+
+.key:nth-child(6){
+  background: #ffe119;
+}
+
+.key:nth-child(7){
+  background: #bfef45;
+}
+
+.key:nth-child(8){
+  background: #800000;
+}
+
+.key:nth-child(9){
+  background: #a9a9a9;
+}
+
+.key:nth-child(10){
+  background: #f032e6;
+}
+
+.key:nth-child(11){
+  background: #469990;
+}
+
+.key:nth-child(12){
+  background: #f58231;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ee6e6e;
+  box-shadow: 0 0 6px #ee6e6e;
+}
+
+kbd {
+  display: block;
+  font-size: 75px;
+}
