@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: 1.2vw;
 }
 body,html {
   margin: 0;
@@ -15,18 +15,22 @@ body,html {
 
 #content {
   position: absolute;
-  height:100%;
-  width:100%;
+  height:100vh;
+  width:100vw;
   background-color: rgb(255, 255, 255);
   overflow:hidden;
   display: flex;
   justify-content: center;
 }
 
+div#preload { 
+  display: none;
+}
+
 #imgWrap {
   position: absolute;
-  top: 10px;
-  height: 400px;
+  top: 1vh;
+  height: 65vh;
   width: 100%;
   background-color: rgb(27, 27, 27);
   
@@ -34,7 +38,7 @@ body,html {
 
 #imgDiv {
   z-index: 3;
-  height: 400px;
+  height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,26 +68,25 @@ body,html {
 }
 
 .keys {
-  display: flex;
   z-index: 10;
-  flex: 1;
-  bottom: 40px;
+  bottom: 0;
+  width: 100%;
   position: absolute;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .key {
-  border: 6px solid black;
+  border: .6vh solid black;
   border-radius: 7px;
-  margin: 2px;
-  padding: 10px 10px;
-  display: flex;
+  margin: .2vh;
+  padding: 1vh 1vh;
+  display: flex;  
   justify-content: center;
   align-items: center; 
   transition: all .07s ease;
-  height: 70px;
-  width: 65px;
+  height: 30vh;
+  width: 10vw;
   text-align: center;
   color: white;
   text-shadow: 0 0 6px black;
@@ -145,5 +148,5 @@ body,html {
 
 kbd {
   display: block;
-  font-size: 75px;
+  font-size: 10vh;
 }

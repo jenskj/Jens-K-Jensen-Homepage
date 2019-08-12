@@ -1,0 +1,251 @@
+  *{margin: 0;padding: 0;}
+body {
+  background: #ddd;
+}
+
+#container
+{
+height: 600px;
+width: 100%;
+background-color: #ddd;
+overflow: hidden;
+position: relative;
+
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#thumbs
+{
+background-color: #ddd;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: auto;
+white-space: nowrap;
+overflow: hidden;
+padding: 30px 100px;
+}
+
+.history-block {
+  height: 100%;
+  width: 300px;
+  background-color: #cdcdcd;
+  margin: 0 -2px;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  font-family: 'roboto condensed', sans-serif;
+  font-size:60px;
+  font-weight: 100;
+  color: #FFF;
+  cursor: pointer;
+  box-shadow: 2px 5px 20px rgba(0,0,0,0.8);
+  transition: width 0.2s;
+}
+
+
+
+.history-block:last-of-type {
+  border-right: none;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+.cover:hover {
+  width: 100%;
+  height: 100%;
+  transition: background .5s;
+  background: rgba(0,0,0,0.2);
+ 
+}
+
+.year {
+  position: absolute;
+    top: 0px;
+    font-size: 30px;
+  font-weight:500;
+    margin: 40px 30px;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  width: 260px;
+    top: 60px;
+    font-size: 15px;
+    margin: 30px;
+  white-space: normal;
+  transition: width 0.2s;
+}
+
+.timeline {
+  display:none;
+  position: absolute;
+  bottom: 80px;
+  font-size: 20px;
+  margin: 20px;
+  transition: all 0.2s;
+
+}
+
+.timeline ul {
+  
+  margin: auto;
+  width: 580px;
+justify-content: center;
+padding: 0;
+display: grid;
+  grid-template: 100% / 20% 20% 20% 20% 20%;
+list-style-type: none;
+text-align: justify;
+}
+/* .timeline ul:after {
+  content: '';
+  width: 2px;
+  background-color: white;
+  height: 40px;
+  position: relative;
+  margin-left: 19px;
+  display: inline-block;
+} */
+
+.timeline ul li {
+  
+  font-family: Rockwell;
+  width: 40px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  border: 3px solid white;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.timeline ul li {
+  
+  font-size: 15px;
+  padding: 0px;
+  transition: all 500ms;
+}
+
+.timeline ul li:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255,255,255,0.5);
+  content: '\f10c';
+  position: absolute;
+  top: 40px;
+  margin-left:10px;
+  transition: all 0.5s;
+}
+
+.timeline ul li:not(:last-child):after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 33px;
+  margin-left:-10px;
+  overflow: hidden;
+  width: 103px;
+  height:2px;
+  border: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.5s;
+}
+
+
+.timelineYear, .timelineYear:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.8s;
+  text-align: center;
+}
+
+.timeline ul li:hover:before {
+  content: '\f111';
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.5s;
+  top: 39px;
+  margin-left:7px
+}
+
+.timeline ul li:not(:last-child):hover:after {
+  content: '';
+  position: relative;
+  top: 30px;
+  margin-left:-10px;
+  width: 100px;
+  height:2px;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.timeline ul li:hover .timelineYear {
+  position: static;
+  top:-10px;
+}
+
+.popUp {
+  display: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  position: absolute;
+  padding: 30px;
+  margin-top: -270px;
+  font-family: Rockwell;
+  width: 550px;
+  height: 220px;
+  opacity: 0,1;
+  text-align: center;
+  line-height: 50px;
+  background-color:  rgb(247, 145, 108, .6);
+  
+  transition: all 500ms;
+}
+
+.hb-0 {
+  background-image: url('https://pm1.narvii.com/6387/ab00ae1e0b76f79a0cd1a33e2185047ce4ebeb12_hq.jpg');
+  background-size: cover;
+}
+
+.hb-1 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg');
+  background-size: cover;
+}
+
+.hb-2 {
+  background-image: url('http://useumstorage.blob.core.windows.net/drupal-public/content-images/Written-Content/Curated-exhibitions/abstract-art/Expressionism/Neoclassicism/apollo-and-diana-attacking-the-children-of-niobe-jacques-louis-david-1772-c37e0bfb.jpg');
+  background-size: cover;
+}
+
+.hb-3 {
+  background-image: url('https://static.skyminds.net/romanticism-caspar-david-friedrich-wanderer-above-the-sea-of-fog.jpg');
+  background-size: cover;
+}
+
+.hb-4 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/1_of_May%2C_1851.jpg/1024px-1_of_May%2C_1851.jpg');
+  background-size: cover;
+}
+
+.hb-5 {
+  background-image: url('http://www.phaidon.com/resource/persistenceofmemory1931.jpg');
+  background-size: cover;
+}
+
+.hb-6 {
+  background-image: url('https://lh6.googleusercontent.com/P9RsQbMqLt15zZG-CahJ2bjpiKn_fxyfoTc7D-GcQFzhkNJQIiNu8wQacnyDJuTyDZYh3_78za69QQV5MXevGKxCwjz3EvfHMbRJEBZatVhcfd6GgnkFwMNVH1F350GGlFBeSxtl');
+  background-size: cover;
+}
+
